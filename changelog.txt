@@ -1,0 +1,26 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.0.3
+Date: 2024-10-14
+  Features:
+    - Updated to handle Factorio's changed 2.0.3 data structure. Is backwards compatible with 2.0.2 and before.
+  Changes:
+  Bugfixes:
+  Info:
+---------------------------------------------------------------------------------------------------
+Version: 0.0.2
+Date: 2024-10-12
+  Features:
+  Changes:
+  Bugfixes:
+    - Fix mod setting description about light brightness.
+    - Handle any modded power poles that would have no lighted area.
+  Info:
+    - Changed to require Factorio 2.0 rather than 1.2 as public release nears.
+---------------------------------------------------------------------------------------------------
+Version: 0.0.1
+Date: 2024-09-30
+  Features:
+    - Initial Release
+  Changes:
+  Bugfixes:
+  Info:
