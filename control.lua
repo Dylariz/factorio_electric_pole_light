@@ -1,7 +1,8 @@
 -- control.lua
 
-local tick_interval = 10  -- Update interval
+local tick_interval = 15  -- Update interval
 storage.pole_lamps = storage.pole_lamps or {}
+storage.tech_researched = storage.tech_researched or false
 
 local function create_or_update_lamp(electric_pole)
     local position = electric_pole.position
@@ -39,11 +40,19 @@ end
 -- Update cycle
 script.on_event(defines.events.on_tick, function(event)
     if event.tick % tick_interval == 0 then
-        for _, surface in pairs(game.surfaces) do
-            for _, electric_pole in pairs(surface.find_entities_filtered{ type = "electric-pole" }) do
-                create_or_update_lamp(electric_pole)
+        if storage.tech_researched == true then
+            for _, surface in pairs(game.surfaces) do
+                for _, electric_pole in pairs(surface.find_entities_filtered{ type = "electric-pole" }) do
+                    create_or_update_lamp(electric_pole)
+                end
             end
         end
+    end
+end)
+
+script.on_event(defines.events.on_research_finished, function(event)
+    if event.research.force.technologies["lamp"].researched then
+        storage.tech_researched = true
     end
 end)
 

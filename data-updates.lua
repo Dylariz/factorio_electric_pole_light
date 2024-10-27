@@ -1,5 +1,6 @@
 local light_scale = settings.startup["electric_pole_light_size_factor"].value
 local light_size_limit = settings.startup["electric_pole_light_max_size"].value
+local light_intensity = settings.startup["electric_pole_light_brightness"].value
 
 local hidden_lamps = {}
 
@@ -29,8 +30,8 @@ for _, pole in pairs(data.raw["electric-pole"]) do
         light_size = light_size_limit 
     end
     
-    hidden_lamp.light = {intensity = 0.9, size = light_size, color = {1, 1, 0.75}}
-    hidden_lamp.energy_usage_per_tick = light_size * 10 .. "W"
+    hidden_lamp.light = {intensity = light_intensity, size = light_size, color = {1, 1, 0.75}}
+    hidden_lamp.energy_usage_per_tick = light_size * 15 .. "W"
     table.insert(hidden_lamps, hidden_lamp)
 end
 

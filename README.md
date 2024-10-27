@@ -1,31 +1,39 @@
-# Factorio-Electric-Pole-Free-Light
+# Electric Pole Light Mod EN
 
+## Description 
 
+The Electric Pole Light Mod adds invisible lamps to electric poles in Factorio, which automatically turn on and off depending on whether the pole is connected to the power network. Energy consumption depends on the brightness and radius of the illuminated area. 
 
-Adds a free light to electric poles based on powered range.
+## Installation 
 
+1. Download and install the mod in the mods directory of your Factorio installation.
+2. Rename the folder factorio_electric_pole_light_master to electric_pole_light.
+3. Enable the mod in the mods menu. 
 
+## Settings 
 
-Features
----------
+The mod supports global parameter settings, such as:
+- Brightness - the intensity of pole lighting.
+- Size Factor for Pole Lighting - scales the radius of the lighting around the pole.
+- Maximum Size for Pole Lighting - limits the maximum radius of the lamp's lighting. 
 
-- Add a free inbuilt light to power poles that uses no power.
-- Is a pure QOL mod designed for streamers, YouTube or anyone who wants to be able to see their base.
-- Blueprint friendly as they are regular power poles, so no modded entities in your exported Blueprint, just no lights either.
+--- 
 
+# Electric Pole Light Mod RU
 
+## Описание 
 
-Options
----------
+Electric Pole Light Mod добавляет невидимые лампы к электрическим столбам, которые автоматически включаются и выключаются в зависимости от подключения столба к сети, потребление энергии зависит от яркости и радиуса освещаемой области. 
 
-- The size of the light for each type of power pole is controlled by the mod settings for it's powering range and connection distance. The largest size between the powered ranged and connection distance is used. These settings allow from none to 100+ percent of each range to be used to set the light size. Defaults to 100% powered range, 0% connection distance.
+## Установка 
 
+1. Скачайте и установите мод в директорию mods вашей установки Factorio.
+2. Переименуйте папку factorio_electric_pole_light_master в electric_pole_light.
+3. Активируйте мод в меню модов. 
 
+## Настройки 
 
-Limitations
----------
-
-- The impact of quality on power area and wire reach isn't respected. Not possible due to the this mod being entirely data prototype and not having any runtime code.
-- The maximum lighted radius is limited to 75 due to the Factorio game engine.
-- Lights in Factorio illuminate the in-game picture you see and so tall building pictures may be half in light and half out, despite their footprint being fully within the lighted area.
-- This mod is a quick and dirty mod for Factorio Space Age ripped from the Inbuilt Lighting mod code designed for Factorio 1.1.
+Мод поддерживает настройки глобальных параметров, таких как:
+- Яркость - интенсивность свечения столбов.
+- Коэффициент размера освещения столба - масштабирование размера радиуса освещения.
+- Максимальный размер освещения столба - ограничение на максимальный радиус освещения лампы.
